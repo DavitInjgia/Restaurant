@@ -1,0 +1,89 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .large-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%; /* Same as before */
+    width: 80%; /* Same as before */
+  }
+  
+  .small-images {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 80%;
+     /* Same as before */
+  }
+  
+  .small-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20%; /* This height corresponds to the space each small image should take */
+    filter: blur(2px); /* Add a blur filter */
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  .small-image.active {
+    filter: none;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background */
+    border-radius: 50%; /* Make the background circular */
+    padding: 10px; /* Add some padding to increase the size of the circle */
+  }
+
+
+  .arrow.left {
+    left: 2%;
+  }
+  
+  .arrow.right {
+    right: 2%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slider {
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    .large-image {
+        width: 100%;
+        height: 50vh; /* Set a fixed height here, like 50vh */
+      }
+  
+    .small-images {
+      display: none;
+    }
+    
+    .arrow {
+      display: block;
+    }
+  }
+  

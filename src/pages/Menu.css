@@ -1,0 +1,47 @@
+.dishes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.filter-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4caf50;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #45a049;
+}
+@media screen and (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+  }
+  .dishes{
+    padding: 1rem;
+  }
+}

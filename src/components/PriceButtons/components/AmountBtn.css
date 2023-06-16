@@ -1,0 +1,24 @@
+.amount-btns {
+    height: 56px;
+    width: 157px;
+    border-radius: 10px;
+    background-color: #f6f8fd;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quantity {
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1d2026;
+    margin-bottom: 0;
+  }
+  .quantity-btn {
+    cursor: pointer;
+  }
+  

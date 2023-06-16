@@ -1,0 +1,27 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+  
+  .info-section {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .map-section {
+    flex: 1;
+  }
+  
+  /* On screens smaller than 768px, hide the info section and show only the map */
+  @media (max-width: 767px) {
+    .info-section {
+      display: none;
+    }
+  
+    .map-section {
+      flex: 100%;
+      width: 100%;
+    }
+  }
+  
